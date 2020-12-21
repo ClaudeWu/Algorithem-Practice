@@ -4,11 +4,11 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class Solution {
-    public static int distinctId(int arr[], int n, int mi) {
+    public static int distinctId(int arr[], int mi) {
         Map<Integer, Integer> m = new HashMap<Integer, Integer>();
         int count = 0, size = 0;
 
-        for(int i = 0; i < n; i++) {
+        for(int i = 0; i < arr.length; i++) {
             if(m.containsKey(arr[i]) == false) {
                 m.put(arr[i], 1);
                 size++;
